@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 
 const Nav = styled.div`
@@ -13,11 +13,13 @@ background-color: black;
 `
 
 function Navigation() {
-    const LinkStyle = {
-    color: "white",
-    padding: "50px",
-    textDecoration: 'none'
-};
+    const LinkStyle = ({isActive}) => {
+        return{
+            color: isActive ? "red":"white",
+            padding: "50px",
+            textDecoration: 'none'
+        }
+    }
 
     const navStyle = { 
     display: "flex",  
@@ -33,16 +35,16 @@ function Navigation() {
       <Nav>
           <ul style={navStyle}>
               <li>
-                  <Link style={LinkStyle} to="/">Home</Link>
+                  <NavLink style={LinkStyle} to="/">Home</NavLink>
               </li>  
               <li>
-                  <Link style={LinkStyle} to="/studio">Studio</Link>
+                  <NavLink style={LinkStyle} to="/studio">Studio</NavLink>
               </li>
               <li>
-                  <Link style={LinkStyle} to="/contact">Contact us</Link>
+                  <NavLink style={LinkStyle} to="/contact">Contact us</NavLink>
               </li>      
               <li>
-                  <Link style={LinkStyle} to="/rooms">Practice rooms</Link>
+                  <NavLink style={LinkStyle} to="/rooms">Practice rooms</NavLink>
               </li>      
           </ul>
       </Nav> 
