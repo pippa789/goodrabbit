@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home'
 import Contact from './pages/Contact';
 import Studio from './pages/Studio'
-import Rooms from './pages/Rooms'
+import Rooms from './pages/Rooms';
 
+       
 function App() {
   return (
   <>
