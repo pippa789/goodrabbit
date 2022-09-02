@@ -4,6 +4,7 @@ import head from '../images/head.jpg';
 
 const Container = styled.div`
 height: 100%;
+// background-color:red;
 `;
 
 const Line = styled.div`
@@ -21,6 +22,10 @@ height: 350px;
 background-image: url(${head});
 padding: 50px;
 margin:  -80px 150px 100px 150px;
+@media (max-width: 768px){
+  opacity: 0;
+  margin-top: 50px;
+}
 `;
 const HeaderOne = styled.h1`
 display:flex;

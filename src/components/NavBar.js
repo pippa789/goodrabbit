@@ -14,6 +14,7 @@ const Nav = styled.div`
     height: 50px;
     width: auto;
     // background-color: green;
+    list-style: none;
 `;
 
 const NavStyle = styled.div`
@@ -21,12 +22,15 @@ const NavStyle = styled.div`
     flexDirection: row;
     justifyContent: flex-end;
     alignItems: center;
-    fontSize: '17px',
-    padding: '1 px',
-    // backgroundColor: 'red',
+    fontSize: 17px;
+    font-family: 'Roboto', sans-serif;
+    padding: 1 px;
+    backgroundColor: red;
     listStyle: none;
     @media(max-width: 768px) {
         flex-direction: column;
+        margin-top: 150px;
+        padding: 20px;
     }
     `;
    

@@ -2,10 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 //email needs link or form
 const Container = styled.div`
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 height: 100%;
 color: white;
 font-size: 20px;
-font-weight: 100;
+font-family: 'Roboto', sans-serif;
+line-height: 1.5;
 `;
 
 const Line = styled.div`
@@ -25,6 +30,10 @@ margin-top: 50px;
 font-size:40px;
 color: red;
 font-family: times new roman;
+@media(max-width: 768px){
+  margin-top: 150px;
+  font-size: 30px;
+}
 `;
 
 const TextBox = styled.p`
@@ -33,8 +42,9 @@ justify-content: center;
 align-items: center;
 width:70%;
 height: 80%;
-margin: 50px 50px 50px 200px;
-
+margin-left:55px;
+margin-right: 55px;
+padding: 10px;
 `;
 
 function Studio() {
